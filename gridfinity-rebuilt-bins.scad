@@ -36,11 +36,11 @@ $fs = 0.25; // .01
 
 /* [General Settings] */
 // number of bases along x-axis
-gridx = 2;
+gridx = 1;
 // number of bases along y-axis
-gridy = 2;
+gridy = 1;
 // bin height. See bin height information and "gridz_define" below.
-gridz = 2; //.1
+gridz = 1; //.1
 // Half grid sized bins.  Implies "only corners".
 half_grid = false;
 
@@ -89,6 +89,7 @@ scoop = 1; //[0:0.1:1]
 only_corners = true;
 //Use gridfinity refined hole style. Not compatible with magnet_holes!
 refined_holes = false;
+hole_offset = -1;
 // Base will have holes for 6mm Diameter x 2mm high magnets.
 magnet_holes = false;
 // Base will have holes for M3 screws.
@@ -119,7 +120,7 @@ gridfinityInit(gridx, gridy, height(gridz, gridz_define, style_lip, enable_zsnap
         cutCylinders(n_divx=cdivx, n_divy=cdivy, cylinder_diameter=cd, cylinder_height=ch, coutout_depth=c_depth, orientation=c_orientation, chamfer=c_chamfer);
     }
 }
-gridfinityBase([gridx, gridy], grid_dimensions=grid_dimensions, hole_options=hole_options, only_corners=only_corners || half_grid, thumbscrew=enable_thumbscrew);
+gridfinityBase([gridx, gridy], grid_dimensions=grid_dimensions, hole_options=hole_options, only_corners=only_corners || half_grid, thumbscrew=enable_thumbscrew, off = hole_offset);
 //}
 
 
