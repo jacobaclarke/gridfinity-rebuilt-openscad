@@ -36,11 +36,11 @@ $fs = 0.25; // .01
 
 /* [General Settings] */
 // number of bases along x-axis
-gridx = 3;
+gridx = 2;
 // number of bases along y-axis
 gridy = 2;
 // bin height. See bin height information and "gridz_define" below.
-gridz = 6; //.1
+gridz = 2; //.1
 // Half grid sized bins.  Implies "only corners".
 half_grid = false;
 
@@ -86,15 +86,15 @@ scoop = 1; //[0:0.1:1]
 
 /* [Base Hole Options] */
 // only cut magnet/screw holes at the corners of the bin to save uneccesary print time
-only_corners = false;
+only_corners = true;
 //Use gridfinity refined hole style. Not compatible with magnet_holes!
-refined_holes = true;
+refined_holes = false;
 // Base will have holes for 6mm Diameter x 2mm high magnets.
 magnet_holes = false;
 // Base will have holes for M3 screws.
-screw_holes = false;
+screw_holes = true;
 // Magnet holes will have crush ribs to hold the magnet.
-crush_ribs = true;
+crush_ribs = false;
 // Magnet/Screw holes will have a chamfer to ease insertion.
 chamfer_holes = true;
 // Magnet/Screw holes will be printed so supports are not needed.

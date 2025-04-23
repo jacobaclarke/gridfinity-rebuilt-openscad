@@ -54,11 +54,11 @@ style_plate = 3; // [0: thin, 1:weighted, 2:skeletonized, 3: screw together, 4: 
 
 
 // hole styles
-style_hole = 0; // [0:none, 1:countersink, 2:counterbore]
+style_hole = 2; // [0:none, 1:countersink, 2:counterbore]
 
 /* [Magnet Hole] */
 // Baseplate will have holes for 6mm Diameter x 2mm high magnets.
-enable_magnet = true;
+enable_magnet = false;
 // Magnet holes will have crush ribs to hold the magnet.
 crush_ribs = true;
 // Magnet holes will have a chamfer to ease insertion.
