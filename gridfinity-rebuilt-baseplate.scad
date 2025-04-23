@@ -26,7 +26,7 @@ gridy = 1;
 
 /* [Screw Together Settings - Defaults work for M3 and 4-40] */
 // screw diameter
-d_screw = 3.35;
+d_screw = 4.4;
 // screw head diameter
 d_screw_head = 5;
 // screw spacing distance
